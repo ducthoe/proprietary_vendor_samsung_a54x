@@ -98,19 +98,19 @@ jobs:
       - name: Fetch firmware
         if: env.need_update == 1
         run: |
-          if [[ "${{ matrix.model }}" == "SM-A5460" ]]; then
+          if [[ "${{ matrix.model }}" == "SM-A5560" ]]; then
               imei="R5CW71BXYRV"
-          elif [[ "${{ matrix.model }}" == "SM-A546B" ]]; then
+          elif [[ "${{ matrix.model }}" == "SM-A556B" ]]; then
               imei="350756481234568"
-          elif [[ "${{ matrix.model }}" == "SM-A546U" ]]; then
+          elif [[ "${{ matrix.model }}" == "SM-A556U" ]]; then
               imei="356044291234563"
-          elif [[ "${{ matrix.model }}" == "SM-A546U1" ]]; then
+          elif [[ "${{ matrix.model }}" == "SM-A556U1" ]]; then
               imei="356642731234562"
-          elif [[ "${{ matrix.model }}" == "SM-A546W" ]]; then
+          elif [[ "${{ matrix.model }}" == "SM-A556W" ]]; then
               imei="351617731234569"
-          elif [[ "${{ matrix.model }}" == "SM-A546V" ]]; then
+          elif [[ "${{ matrix.model }}" == "SM-A556V" ]]; then
               imei="351783151234560"
-          elif [[ "${{ matrix.model }}" == "SM-A546S" ]]; then
+          elif [[ "${{ matrix.model }}" == "SM-A556S" ]]; then
               imei="351992291234568"
           else
               imei="350090711234564"
